@@ -286,6 +286,8 @@
     const videoBg = section.querySelector(".track-video-bg");
     const videoOverlay = section.querySelector(".track-video-overlay");
     const coverImgEl = section.querySelector(".track-cover-img");
+    const prevBtn = section.querySelector(".track-nav-arrow--prev");
+    const nextBtn = section.querySelector(".track-nav-arrow--next");
     let currentIndex = -1;
     let pending = null;
     let activeVideoId = null;
@@ -405,6 +407,12 @@
 
     const ticks = Array.from(ticksEl.querySelectorAll(".scrubber-tick"));
 
+    function updateArrows(index) {
+      if (!prevBtn || !nextBtn) return;
+      prevBtn.hidden = index === 0;
+      nextBtn.hidden = index === tracks.length - 1;
+    }
+
     function applyTrack(index) {
       const t = tracks[index];
       titleEl.textContent = t.title;
@@ -430,6 +438,7 @@
       const spotifyLink = section.querySelector("#spotify-open-link");
       if (spotifyLink && t.spotifyUrl) spotifyLink.href = t.spotifyUrl;
 
+      updateArrows(index);
       pending = null;
     }
 
@@ -538,6 +547,18 @@
         fadeVol(0, 400, () => audio.pause());
       }
     });
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => {
+        if (currentIndex > 0) showTrack(currentIndex - 1);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        if (currentIndex < tracks.length - 1) showTrack(currentIndex + 1);
+      });
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {

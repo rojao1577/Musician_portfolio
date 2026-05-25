@@ -34,6 +34,9 @@ CSS source: `css/main.css` (~798 lines)
 | `.track-number` | Listen | 310 | no |
 | `.track-title` | Listen | 317 | no |
 | `.track-meta` | Listen | 326 | no |
+| `.track-nav-arrow` | Listen | 522 | no |
+| `.track-nav-arrow--prev` | Listen | 540 | no |
+| `.track-nav-arrow--next` | Listen | 541 | no |
 | `.track-scrubber` | Listen | 332 | no |
 | `.scrubber-line` | Listen | 341 | no |
 | `.scrubber-ticks` | Listen | 350 | no |
@@ -174,6 +177,9 @@ Managed exclusively via `setVideoBg()` in JS. Do not manipulate directly.
 
 #### `.track-cover-img.visible`
 opacity: 0.18 when visible. Managed via `applyTrack()` in JS.
+
+#### `.track-nav-arrow` / `--prev` / `--next`
+Mobile-only (≤600px) navigation buttons. `display: none` on desktop, `position: absolute` on mobile sides. JS sets `hidden` attribute to show/hide per track position: `--prev` hidden on index 0, `--next` hidden on last index. Do not create other navigation button classes.
 
 ---
 
