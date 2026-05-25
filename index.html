@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alomally — official website" />
+    <title>Alomally</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&family=Metal+Mania&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <canvas id="gradient-canvas" aria-hidden="true"></canvas>
+
+    <div class="social-bar" role="navigation" aria-label="Social links">
+      <div class="social-bar-side social-bar-left">
+        <svg
+          class="social-bar-star social-bar-star--left"
+          viewBox="0 0 100 100"
+          aria-hidden="true"
+        >
+          <defs>
+            <clipPath id="sb-star-l">
+              <polygon
+                points="50,4 62,34 95,34 69,55 80,90 50,71 20,90 31,55 5,34 38,34"
+              />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#sb-star-l)" stroke="white" stroke-width="1.4">
+            <line x1="-80" y1="0" x2="20" y2="100" />
+            <line x1="-71" y1="0" x2="29" y2="100" />
+            <line x1="-62" y1="0" x2="38" y2="100" />
+            <line x1="-53" y1="0" x2="47" y2="100" />
+            <line x1="-44" y1="0" x2="56" y2="100" />
+            <line x1="-35" y1="0" x2="65" y2="100" />
+            <line x1="-26" y1="0" x2="74" y2="100" />
+            <line x1="-17" y1="0" x2="83" y2="100" />
+            <line x1="-8" y1="0" x2="92" y2="100" />
+            <line x1="1" y1="0" x2="101" y2="100" />
+            <line x1="10" y1="0" x2="110" y2="100" />
+            <line x1="19" y1="0" x2="119" y2="100" />
+            <line x1="28" y1="0" x2="128" y2="100" />
+            <line x1="37" y1="0" x2="137" y2="100" />
+            <line x1="46" y1="0" x2="146" y2="100" />
+            <line x1="55" y1="0" x2="155" y2="100" />
+            <line x1="64" y1="0" x2="164" y2="100" />
+            <line x1="73" y1="0" x2="173" y2="100" />
+            <line x1="82" y1="0" x2="182" y2="100" />
+            <line x1="91" y1="0" x2="191" y2="100" />
+            <line x1="100" y1="0" x2="200" y2="100" />
+            <line x1="109" y1="0" x2="209" y2="100" />
+            <line x1="118" y1="0" x2="218" y2="100" />
+            <line x1="127" y1="0" x2="227" y2="100" />
+          </g>
+          <polygon
+            points="50,4 62,34 95,34 69,55 80,90 50,71 20,90 31,55 5,34 38,34"
+            fill="none"
+            stroke="white"
+            stroke-width="2.2"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <a
+          href="https://www.instagram.com/alomallymusic/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-bar-link"
+          >Instagram</a
+        >
+      </div>
+      <a
+        href="https://open.spotify.com/intl-pt/artist/57fhuFj04oOUicfQCrUQVZ"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-bar-link"
+        >Spotify</a
+      >
+      <div class="social-bar-side social-bar-right">
+        <a
+          href="https://www.youtube.com/@Alomally"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-bar-link"
+          >YouTube</a
+        >
+        <svg
+          class="social-bar-star social-bar-star--right"
+          viewBox="0 0 100 100"
+          aria-hidden="true"
+        >
+          <defs>
+            <clipPath id="sb-star-r">
+              <polygon
+                points="50,4 62,34 95,34 69,55 80,90 50,71 20,90 31,55 5,34 38,34"
+              />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#sb-star-r)" stroke="white" stroke-width="1.4">
+            <line x1="-80" y1="0" x2="20" y2="100" />
+            <line x1="-71" y1="0" x2="29" y2="100" />
+            <line x1="-62" y1="0" x2="38" y2="100" />
+            <line x1="-53" y1="0" x2="47" y2="100" />
+            <line x1="-44" y1="0" x2="56" y2="100" />
+            <line x1="-35" y1="0" x2="65" y2="100" />
+            <line x1="-26" y1="0" x2="74" y2="100" />
+            <line x1="-17" y1="0" x2="83" y2="100" />
+            <line x1="-8" y1="0" x2="92" y2="100" />
+            <line x1="1" y1="0" x2="101" y2="100" />
+            <line x1="10" y1="0" x2="110" y2="100" />
+            <line x1="19" y1="0" x2="119" y2="100" />
+            <line x1="28" y1="0" x2="128" y2="100" />
+            <line x1="37" y1="0" x2="137" y2="100" />
+            <line x1="46" y1="0" x2="146" y2="100" />
+            <line x1="55" y1="0" x2="155" y2="100" />
+            <line x1="64" y1="0" x2="164" y2="100" />
+            <line x1="73" y1="0" x2="173" y2="100" />
+            <line x1="82" y1="0" x2="182" y2="100" />
+            <line x1="91" y1="0" x2="191" y2="100" />
+            <line x1="100" y1="0" x2="200" y2="100" />
+            <line x1="109" y1="0" x2="209" y2="100" />
+            <line x1="118" y1="0" x2="218" y2="100" />
+            <line x1="127" y1="0" x2="227" y2="100" />
+          </g>
+          <polygon
+            points="50,4 62,34 95,34 69,55 80,90 50,71 20,90 31,55 5,34 38,34"
+            fill="none"
+            stroke="white"
+            stroke-width="2.2"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <a href="#hero" class="nav-logo">Alomally</a>
+      <ul class="nav-links">
+        <li><a href="#music">Tracks</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#discography">Lançamentos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" aria-label="Hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <img
+            src="assets/images/artist-name.png"
+            alt="Alomally"
+            class="hero-name-img"
+          />
+        </div>
+        <img
+          src="assets/images/logo.png"
+          alt=""
+          aria-hidden="true"
+          class="hero-logo"
+        />
+      </div>
+    </section>
+
+    <!-- Listen -->
+    <section id="music" aria-label="Listen">
+      <div class="track-video-bg" aria-hidden="true"></div>
+      <div class="track-video-overlay" aria-hidden="true"></div>
+      <div class="track-cover-bg" aria-hidden="true">
+        <img class="track-cover-img" src="" alt="" />
+      </div>
+
+      <span class="music-label" aria-hidden="true">Tracks</span>
+
+      <div class="track-display">
+        <p class="track-number"></p>
+        <h2 class="track-title"></h2>
+        <p class="track-meta"></p>
+      </div>
+
+      <div class="track-scrubber" aria-hidden="true">
+        <div class="scrubber-line"></div>
+        <div class="scrubber-ticks"></div>
+        <div class="scrubber-cursor"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="about-inner section-fade">
+        <div class="about-image reveal">
+          <img src="assets/icons/Sobre_foto.jpeg" alt="Paloma Barbosa — foto artística" />
+        </div>
+        <div class="about-text reveal">
+          <h2 id="about-heading">Sobre</h2>
+          <p>
+            Paloma Barbosa, também conhecida como “Alomally”, nasceu em
+            Garanhuns-PE, no dia 22 de julho de 2003. Desde sempre demonstrou
+            uma forte conexão com a arte, explorando diferentes formas de
+            expressão como desenho, dança e apresentações culturais, até
+            descobrir na música sua maior paixão. Durante a vida escolar,
+            participou de atividades artísticas, incluindo peças de teatro e
+            apresentações de dança, experiências que marcaram seus primeiros
+            contatos com os palcos. Aos 12 anos, iniciou seus estudos no violão
+            usando o instrumento de seu pai, que continua sendo usado até hoje.
+            Nesse mesmo período, compôs sua primeira música “O Sol e a Lua”,
+            dando início ao processo criativo que mais tarde definiria sua
+            identidade musical.
+          </p>
+          <p>
+            Em 2020, deu início à sua carreira na música com nome artístico
+            “Paullz”. Posteriormente, adotou o nome “Mori” e, após assumir
+            publicamente sua identidade como mulher trans, passou a utilizar o
+            nome artístico “Alomally”, criado a partir de trocadilhos e jogos de
+            palavras, uma característica marcante de sua personalidade e
+            expressão artística.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discography -->
+    <section id="discography" aria-labelledby="discography-heading">
+      <div class="discography-inner section-fade">
+        <h2 id="discography-heading" class="section-heading reveal">
+          Lançamentos
+        </h2>
+        <div class="discography-grid"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="contact-inner section-fade">
+        <h2 id="contact-heading" class="reveal">Contato</h2>
+
+        <form
+          class="contact-form reveal"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          novalidate
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <div class="form-group">
+            <label for="field-name">Nome</label>
+            <input
+              type="text"
+              id="field-name"
+              name="name"
+              autocomplete="name"
+              aria-required="true"
+              aria-describedby="error-name"
+            />
+            <span
+              class="form-error"
+              id="error-name"
+              data-error="name"
+              role="alert"
+            ></span>
+          </div>
+
+          <div class="form-group">
+            <label for="field-email">Email</label>
+            <input
+              type="email"
+              id="field-email"
+              name="email"
+              autocomplete="email"
+              aria-required="true"
+              aria-describedby="error-email"
+            />
+            <span
+              class="form-error"
+              id="error-email"
+              data-error="email"
+              role="alert"
+            ></span>
+          </div>
+
+          <div class="form-group">
+            <label for="field-message">Mensagem</label>
+            <textarea
+              id="field-message"
+              name="message"
+              aria-required="true"
+              aria-describedby="error-message"
+            ></textarea>
+            <span
+              class="form-error"
+              id="error-message"
+              data-error="message"
+              role="alert"
+            ></span>
+          </div>
+
+          <button type="submit" class="form-submit">Send</button>
+        </form>
+
+        <div class="form-success" aria-live="polite">
+          <p>Mensagem recebida! Logo entrarei em contato.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Alomally</p>
+    </footer>
+
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- VHS Intro Overlay — dismissed on click/Enter; removed via JS after exit animation -->
+    <div
+      class="vinheta"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Entrada — Alomally"
+    >
+      <canvas class="vinheta__noise" aria-hidden="true"></canvas>
+      <div class="vinheta__scanlines" aria-hidden="true"></div>
+      <div class="vinheta__vignette" aria-hidden="true"></div>
+      <div
+        class="vinheta__glitch-strip vinheta__glitch-strip--a"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="vinheta__glitch-strip vinheta__glitch-strip--b"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="vinheta__glitch-strip vinheta__glitch-strip--c"
+        aria-hidden="true"
+      ></div>
+      <div class="vinheta__center">
+        <button
+          class="vinheta__logo-btn"
+          aria-label="Clique para entrar no site"
+        >
+          <img
+            src="assets/images/logo.png"
+            alt="Alomally"
+            class="vinheta__logo"
+          />
+        </button>
+        <p class="vinheta__cta">
+          Clique na logo para entrar no universo de
+          <span class="vinheta__cta-name">Alomally</span>
+        </p>
+      </div>
+      <div class="vinheta__afterglow" aria-hidden="true"></div>
+      <!-- VHS HUD — REC, play, data, hora Brasília -->
+      <div class="vinheta__hud" aria-hidden="true">
+        <div class="vinheta__hud-rec">
+          <span class="vinheta__hud-rec-dot"></span>
+          <span>REC</span>
+        </div>
+        <div class="vinheta__hud-play"><span>&#9654;</span></div>
+        <div class="vinheta__hud-datetime">
+          <span class="vinheta__hud-date" id="vhs-date"></span>
+          <span class="vinheta__hud-time" id="vhs-time"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

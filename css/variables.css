@@ -1,0 +1,36 @@
+:root {
+  --color-bg: #050505;
+  --color-surface: #0d0d0d;
+  --color-surface-2: #141414;
+  --color-text: #f0f0f0;
+  --color-text-muted: #606060;
+  --color-accent: #7c3aed;
+  --color-border: #1a1a1a;
+
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  --transition-fast: 0.2s ease;
+  --transition-slow: 0.6s ease;
+
+  --max-width: 1200px;
+  --nav-height: 64px;
+  --social-bar-height: 48px;
+
+  --overlay-bg-72:      rgba(5,  5,  5,  0.72);
+  --overlay-bg-85:      rgba(5,  5,  5,  0.85);
+  --overlay-bg-92:      rgba(5,  5,  5,  0.92);
+  --overlay-surface-86: rgba(13, 13, 13, 0.86);
+
+  --color-error: #ef4444;
+
+  --font-gothic:            'Metal Mania', cursive;
+  --vinheta-tint:           rgba(124, 58, 237, 0.04);
+  --vinheta-scanline-color: rgba(124, 58, 237, 0.08);
+}

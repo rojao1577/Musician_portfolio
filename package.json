@@ -1,0 +1,13 @@
+{
+  "name": "musician-portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "fetch-spotify": "node scripts/fetch-spotify.js",
+    "serve": "npx serve ."
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "jsdom": "^29.1.1"
+  }
+}

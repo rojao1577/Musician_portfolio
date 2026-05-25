@@ -1,0 +1,106 @@
+{
+  "tracks": [
+    {
+      "id": "3GwsPY8HRsUdDu2ViAmrlP",
+      "title": "Chuva de Diamantes",
+      "album": "Chuva de Diamantes",
+      "year": "2026",
+      "duration": "3:15",
+      "spotifyUrl": "https://open.spotify.com/track/3GwsPY8HRsUdDu2ViAmrlP",
+      "cover": "https://i.scdn.co/image/ab67616d0000b273283629991f3b16015fb4123d",
+      "previewUrl": "assets/audio/Alomally-Chuva-de-Diamantes.mp3"
+    },
+    {
+      "id": "5vDpBrMS1ZupNYUnBVcexm",
+      "title": "carta desabafo",
+      "album": "carta desabafo",
+      "year": "2026",
+      "duration": "3:03",
+      "spotifyUrl": "https://open.spotify.com/track/5vDpBrMS1ZupNYUnBVcexm",
+      "cover": "https://i.scdn.co/image/ab67616d0000b2736e6e2fecc8c9bd51ca6c3e35",
+      "previewUrl": "assets/audio/Alomally-carta-desabafo_Media.mp3"
+    },
+    {
+      "id": "490NVzfgYnVyLPbpe7ZaOm",
+      "title": "anomalia cósmica",
+      "album": "anomalia cósmica",
+      "year": "2025",
+      "duration": "3:03",
+      "spotifyUrl": "https://open.spotify.com/track/490NVzfgYnVyLPbpe7ZaOm",
+      "cover": "https://i.scdn.co/image/ab67616d0000b273c70970af99b82197cfbeec6a",
+      "previewUrl": "assets/audio/Alomally-anomalia-cosmica_Media.mp3"
+    },
+    {
+      "id": "1iJCU8SwT9Rgqp2mE9z7hm",
+      "title": "Olha pra mim",
+      "album": "Olha pra mim",
+      "year": "2026",
+      "duration": "3:12",
+      "spotifyUrl": "https://open.spotify.com/track/1iJCU8SwT9Rgqp2mE9z7hm",
+      "cover": "https://i.scdn.co/image/ab67616d0000b2738c9735efa7577ff5295d33aa",
+      "previewUrl": "assets/audio/Alomally-Olha-pra-mim_Media.mp3"
+    },
+    {
+      "id": "73pg6bw2oobBVfyZmSRYtK",
+      "title": "mentiras covardes",
+      "album": "mentiras covardes",
+      "year": "2025",
+      "duration": "2:20",
+      "spotifyUrl": "https://open.spotify.com/track/73pg6bw2oobBVfyZmSRYtK",
+      "cover": "https://i.scdn.co/image/ab67616d0000b273695efb1afeac17c0863c1d4a",
+      "previewUrl": "assets/audio/Alomally-mentiras-covardes_Media.mp3"
+    }
+  ],
+  "releases": [
+    {
+      "id": "6kCpMF2U2ZnH7UedctCkBv",
+      "title": "Chuva de Diamantes",
+      "year": "2026",
+      "type": "single",
+      "cover": "https://i.scdn.co/image/ab67616d0000b273283629991f3b16015fb4123d",
+      "spotifyId": "6kCpMF2U2ZnH7UedctCkBv",
+      "spotifyUrl": "https://open.spotify.com/album/6kCpMF2U2ZnH7UedctCkBv",
+      "trackCount": 1
+    },
+    {
+      "id": "3bBSSguLNcD2KKkbEG1yy0",
+      "title": "carta desabafo",
+      "year": "2026",
+      "type": "single",
+      "cover": "https://i.scdn.co/image/ab67616d0000b2736e6e2fecc8c9bd51ca6c3e35",
+      "spotifyId": "3bBSSguLNcD2KKkbEG1yy0",
+      "spotifyUrl": "https://open.spotify.com/album/3bBSSguLNcD2KKkbEG1yy0",
+      "trackCount": 1
+    },
+    {
+      "id": "6wrQZpJj85cpk9za8k6NBi",
+      "title": "Olha pra mim",
+      "year": "2026",
+      "type": "single",
+      "cover": "https://i.scdn.co/image/ab67616d0000b2738c9735efa7577ff5295d33aa",
+      "spotifyId": "6wrQZpJj85cpk9za8k6NBi",
+      "spotifyUrl": "https://open.spotify.com/album/6wrQZpJj85cpk9za8k6NBi",
+      "trackCount": 1
+    },
+    {
+      "id": "2WQazjJ5BXG0fG46aepRj5",
+      "title": "mentiras covardes",
+      "year": "2025",
+      "type": "single",
+      "cover": "https://i.scdn.co/image/ab67616d0000b273695efb1afeac17c0863c1d4a",
+      "spotifyId": "2WQazjJ5BXG0fG46aepRj5",
+      "spotifyUrl": "https://open.spotify.com/album/2WQazjJ5BXG0fG46aepRj5",
+      "trackCount": 1
+    },
+    {
+      "id": "5uNbrC4YoPZC7yXtIN4e5K",
+      "title": "anomalia cósmica",
+      "year": "2025",
+      "type": "single",
+      "cover": "https://i.scdn.co/image/ab67616d0000b273c70970af99b82197cfbeec6a",
+      "spotifyId": "5uNbrC4YoPZC7yXtIN4e5K",
+      "spotifyUrl": "https://open.spotify.com/album/5uNbrC4YoPZC7yXtIN4e5K",
+      "trackCount": 1
+    }
+  ]
+}
