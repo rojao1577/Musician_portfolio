@@ -759,6 +759,7 @@ footer p {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  caret-color: transparent;
 }
 
 /* Pixel-noise canvas — JS drives ImageData at every rAF frame */
