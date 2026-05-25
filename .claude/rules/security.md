@@ -43,6 +43,26 @@ el.innerHTML = track.title;
 el.textContent = track.title;
 ```
 
+## Contact form
+
+The contact section uses **Netlify Forms** — Netlify stores submissions and applies basic spam filtering automatically.
+
+**What Netlify covers:**
+- HTTPS on all form submissions
+- Submission storage in the Netlify dashboard
+- Basic spam filtering
+
+**What must be kept in the code:**
+- `data-netlify-honeypot="bot-field"` on the `<form>` tag — catches most bots without a CAPTCHA
+- A hidden `<input type="hidden" name="bot-field" />` paired with the honeypot attribute
+- All user input rendered to the DOM via `textContent` only — never `innerHTML`
+
+**Never do:**
+- Render a submitted value (name, email, message) back to the DOM after submission — show only a static success message
+- Remove the honeypot input without replacing it with equivalent bot protection
+
+**Free tier limit:** 100 submissions/month on Netlify. If the volume grows, upgrade the plan or add `data-netlify-recaptcha="true"` and a `<div data-netlify-recaptcha="true">` in the form.
+
 ## Git hygiene
 
 - Before any commit or push, scan staged files for: `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, or any bearer token pattern (`Bearer `, `BQ...`)
