@@ -513,8 +513,8 @@ nav.scrolled {
   }
 }
 
-/* Track nav arrows — mobile only (hidden by default) */
-.track-nav-arrow {
+/* Track dots — mobile only (hidden by default) */
+.track-dots {
   display: none;
 }
 
@@ -1150,35 +1150,37 @@ footer p {
     display: none;
   }
 
-  .track-nav-arrow {
+  .track-dots {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 2rem;
-    padding: var(--space-sm);
-    cursor: pointer;
-    opacity: 0.7;
-    transition: opacity 0.2s;
+    bottom: var(--space-lg);
+    left: 0;
+    right: 0;
     z-index: 10;
   }
 
-  .track-nav-arrow:focus-visible {
-    opacity: 1;
-    outline: 2px solid #fff;
-    outline-offset: 2px;
+  .track-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
   }
 
-  .track-nav-arrow--prev { left: 0; }
-  .track-nav-arrow--next { right: 0; }
+  .track-dot.active {
+    background: #fff;
+    transform: scale(1.25);
+  }
 
-  .track-nav-arrow[hidden] {
-    display: none;
+  .track-dot:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
   }
 
   .about-image {

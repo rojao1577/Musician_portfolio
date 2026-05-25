@@ -286,8 +286,7 @@
     const videoBg = section.querySelector(".track-video-bg");
     const videoOverlay = section.querySelector(".track-video-overlay");
     const coverImgEl = section.querySelector(".track-cover-img");
-    const prevBtn = section.querySelector(".track-nav-arrow--prev");
-    const nextBtn = section.querySelector(".track-nav-arrow--next");
+    const dotsContainer = section.querySelector(".track-dots");
     let currentIndex = -1;
     let pending = null;
     let activeVideoId = null;
@@ -407,10 +406,18 @@
 
     const ticks = Array.from(ticksEl.querySelectorAll(".scrubber-tick"));
 
-    function updateArrows(index) {
-      if (!prevBtn || !nextBtn) return;
-      prevBtn.hidden = index === 0;
-      nextBtn.hidden = index === tracks.length - 1;
+    const dots = [];
+    if (dotsContainer) {
+      tracks.forEach((_, i) => {
+        const btn = document.createElement("button");
+        btn.className = "track-dot";
+        btn.setAttribute("role", "tab");
+        btn.setAttribute("aria-selected", "false");
+        btn.setAttribute("aria-label", "Música " + (i + 1));
+        btn.addEventListener("click", () => showTrack(i));
+        dotsContainer.appendChild(btn);
+        dots.push(btn);
+      });
     }
 
     function applyTrack(index) {
@@ -438,7 +445,10 @@
       const spotifyLink = section.querySelector("#spotify-open-link");
       if (spotifyLink && t.spotifyUrl) spotifyLink.href = t.spotifyUrl;
 
-      updateArrows(index);
+      dots.forEach((d, i) => {
+        d.classList.toggle("active", i === index);
+        d.setAttribute("aria-selected", i === index ? "true" : "false");
+      });
       pending = null;
     }
 
@@ -547,18 +557,6 @@
         fadeVol(0, 400, () => audio.pause());
       }
     });
-
-    if (prevBtn) {
-      prevBtn.addEventListener("click", () => {
-        if (currentIndex > 0) showTrack(currentIndex - 1);
-      });
-    }
-
-    if (nextBtn) {
-      nextBtn.addEventListener("click", () => {
-        if (currentIndex < tracks.length - 1) showTrack(currentIndex + 1);
-      });
-    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
